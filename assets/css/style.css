@@ -170,3 +170,23 @@ header.sticky ul li a {
 }
 
 /*------------- End Page 4 --------------------*/
+
+.popup-button {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s linear 0s, opacity 1s;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  background-color: #e6f2b4;
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+  /* transition: all 2s; */
+}
+
+.popup-button.show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 0s, opacity 1s;
+  /* transition: all 2s; */
+}
