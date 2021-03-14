@@ -170,3 +170,44 @@ header.sticky ul li a {
 }
 
 /*------------- End Page 4 --------------------*/
+
+/*------------- Page 5 --------------------*/
+
+#text-com {
+  font-size: 14px;
+  color: #6b7175;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/*------------- End Page 5 --------------------*/
+
+/*------------- Page 6 --------------------*/
+.give {
+  text-align: center;
+  color: #0b4a72;
+}
+
+.give h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.nih {
+  text-align: center;
+  padding: 15rem;
+}
+
+#test-nih {
+  box-sizing: content-box;
+  width: 7rem;
+}
+
+.nih p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  font-weight: 45rem;
+  color: #426b85;
+}
+/*------------- End Page 6 --------------------*/
