@@ -3,5 +3,5 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 
   var popup = document.getElementById("popup");
-  popup.classList.toggle("show", window.scrollY > 500);
+  popup.classList.toggle("show", window.scrollY > 1300);
 });
