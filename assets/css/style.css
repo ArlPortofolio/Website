@@ -76,6 +76,15 @@ header.sticky ul li a {
 /*------------ End Page 0 ------------*/
 
 /*------------- Page 1 --------------------*/
+#btn-test {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  background-color: #e6f2b4;
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+}
+
 .header-test {
   background-color: #fff2cd;
   padding: 10px;
@@ -171,6 +180,8 @@ header.sticky ul li a {
 
 /*------------- End Page 4 --------------------*/
 
+/*------------- Popup --------------------*/
+
 .popup-button {
   visibility: hidden;
   opacity: 0;
@@ -190,6 +201,14 @@ header.sticky ul li a {
   transition: visibility 1s linear 0s, opacity 1s;
   /* transition: all 2s; */
 }
+
+#bulet {
+  width: 65px;
+  height: 60px;
+  border-radius: 50%;
+}
+/*------------- End Popup --------------------*/
+
 /*------------- Page 5 --------------------*/
 
 #text-com {
