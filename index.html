@@ -12,22 +12,19 @@
 
   <body>
     <header>
-      <a href="#" class="logo">Logo</a>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Portofolio</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <div class="menu-btn">
+        <div class="menu-btn_burger"></div>
+      </div>
+      <div>
+        <p class="provider">For Providers</p>
+      </div>
     </header>
 
     <!-- Page 0 -->
-    <section id="page-0">
+    <section>
       <div class="container">
-        <div class="con">
-          <p id="text-con">We accept most major insurance!</p>
+        <div class="nav-test">
+          <p id="nav-coba">We accept most major insurance!</p>
         </div>
       </div>
     </section>
@@ -100,13 +97,23 @@
         <div class="row">
           <div class="col-md-6">
             <div class="video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/UYM4PaZPF4g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <button type="button" class="btn btn-lg centered" style="background-color: #e6f2b4">Large button</button>
+              <div class="embed-responsive embed-responsive-21by9">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/UYM4PaZPF4g"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <button class="btn btn-eclipse" type="submit">Watch Lisa's Story ></button>
             </div>
           </div>
           <div class="col-md-6">
             <div class="text-video">
-              <p>"It's been a life changer for me - how easy it is to use. I'll never go to a pharmacy again."</p>
+              <p id="text-button">"It's been a life changer for me - how easy it is to use. I'll never go to a pharmacy again."</p>
               <p id="text-p">-Lisa, Alto customer</p>
             </div>
           </div>
@@ -184,14 +191,10 @@
     <!-- Popup -->
 
     <div id="popup" class="btn popup-button">
-      <div class="row">
-        <div class="col-md-3">
-          <img id="bulet" src="assets/img/Wlp_1.png" alt="" />
-        </div>
-        <div class="col-md-9">
-          <p>Transfer in second</p>
-        </div>
-      </div>
+      <nav class="container yuk">
+        <div><img src="assets/img/Wlp_1.png" class="img-circle" /></div>
+        <div class="search">Transfer in Seconds</div>
+      </nav>
     </div>
 
     <!-- End Popup -->
