@@ -1,11 +1,4 @@
 /*------------ Header ------------------*/
-@import url("http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
 header {
   position: fixed;
@@ -16,9 +9,51 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 40px 100px;
+  padding: 50px 100px;
   z-index: 100000;
 }
+
+/* hamburger */
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.menu-btn_burger {
+  width: 40px;
+  height: 6px;
+  background: #0b4a72;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 1011, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #0b4a72;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 1011, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn_burger::after {
+  transform: translateY(-16px);
+}
+
 header.sticky {
   padding: 30px 100px;
   background: #fff;
@@ -26,36 +61,38 @@ header.sticky {
 header .logo {
   position: relative;
   font-weight: 700;
-  color: transparent;
+  color: #0b4a72;
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.6s;
 }
-header ul {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+/* ANIMATION */
+.menu-btn.open .menu-btn_burger {
+  transform: translateY(-50px);
+  background: transparent;
+  box-shadow: none;
 }
 
-header ul li {
-  position: relative;
-  list-style: none;
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
 }
 
-header ul li a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  color: transparent;
-  letter-spacing: 2px;
-  font-weight: 500;
-  transition: 0.6s;
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
+/* End Hamburger */
+
 header.sticky .logo,
 header.sticky ul li a {
+  color: #0b4a72;
+}
+
+.provider {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
   color: #0b4a72;
 }
 /*------------ End Page Header ------------*/
@@ -64,6 +101,21 @@ header.sticky ul li a {
 
 #page-0 {
   margin: 5px;
+}
+
+.nav-test {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 100px;
+}
+
+#nav-coba {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  color: #0b4a72;
 }
 
 #text-con {
@@ -76,23 +128,6 @@ header.sticky ul li a {
 /*------------ End Page 0 ------------*/
 
 /*------------- Page 1 --------------------*/
-#btn-test {
-  position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  background-color: #e6f2b4;
-  padding: 0.5rem 3rem;
-  border-radius: 2rem;
-}
-
-.header-test {
-  background-color: #fff2cd;
-  padding: 10px;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 23px;
-  color: #0b4a72;
-}
 
 #page-1 {
   background-color: #fef8f1;
@@ -154,11 +189,22 @@ header.sticky ul li a {
 
 /*------------- Page 3 --------------------*/
 
+.btn-eclipse {
+  background-color: #eef2f5;
+  color: #0b4a72;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  border-radius: 40px;
+}
+
+#text-o {
+  font-family: "Times New Roman", Times, serif;
+}
+
 .text-video {
   text-align: center;
-  margin: 60px 100px;
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
+  margin: 40px 100px;
+  font-size: 25px;
   color: #0b4a72;
 }
 
@@ -167,6 +213,10 @@ header.sticky ul li a {
   color: #6b7175;
   font-family: Arial, Helvetica, sans-serif;
   margin: 40px;
+}
+
+#text-button {
+  font-family: "Times New Roman", Times, serif;
 }
 
 /*------------- End Page 3 --------------------*/
@@ -188,7 +238,7 @@ header.sticky ul li a {
   transition: visibility 1s linear 0s, opacity 1s;
   position: fixed;
   bottom: 2rem;
-  left: 50%;
+  left: 35%;
   background-color: #e6f2b4;
   padding: 0.5rem 3rem;
   border-radius: 2rem;
@@ -202,10 +252,22 @@ header.sticky ul li a {
   /* transition: all 2s; */
 }
 
-#bulet {
-  width: 65px;
-  height: 60px;
-  border-radius: 50%;
+.yuk {
+  display: flex;
+  align-items: center;
+}
+
+.img-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.search {
+  margin: 12px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: #0b4a72;
 }
 /*------------- End Popup --------------------*/
 
